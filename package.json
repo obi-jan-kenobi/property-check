@@ -1,0 +1,11 @@
+{
+  "name": "prop-check",
+  "version": "0.0.1",
+  "description": "library for random testing of program properties",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jan Sziegaud <j.sziegaud@gmail.com>",
+  "license": "ISC"
+}
