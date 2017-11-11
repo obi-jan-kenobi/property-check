@@ -1,3 +1,5 @@
+"use strict"
+
 const property = (...generators) => (prop, iterations = 100) => {
   const gens = generators.map(gen => gen())
   for (let i = 0; i < iterations; i++) {
@@ -18,9 +20,7 @@ function * asyncGen () {
   }
 }
 
-property(intGen, asyncGen)((x, y) => x < x + y, 25)
-
-module.exports = 
+module.exports =
   { property
   , generators:
     { intGen
