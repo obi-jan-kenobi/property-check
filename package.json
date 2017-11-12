@@ -1,6 +1,6 @@
 {
   "name": "property-check",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "library for random testing of program properties",
   "main": "index.js",
   "scripts": {

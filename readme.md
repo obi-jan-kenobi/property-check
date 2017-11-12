@@ -5,7 +5,7 @@ property-check is a library for random testing of program properties
 ## How to use
 
 The property-function gets called with generators in the order in which they should supply values to the property we're going to check.
-These generators are generator-functions which yield the desired values. Here is a basic example which yields random Integers.
+These generators are generator-functions which yield the desired values. Here is a basic example which yields random positive Integers.
 
 ```js
 function * intGen () {
