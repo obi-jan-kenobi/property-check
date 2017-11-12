@@ -15,6 +15,10 @@ const sample = generator => {
   return ret.fill().map(_ => values.next())
 }
 
+function * charGen () {
+  while (true) yield String.fromCharCode(Math.round(Math.random() * 65535))
+}
+
 function * intGen () {
   while (true) yield Math.round(Math.random() * Number.MAX_SAFE_INTEGER)
 }
@@ -30,6 +34,7 @@ module.exports =
   { property
   , generators:
     { intGen
+    , charGen
     }
   , sample
   }
