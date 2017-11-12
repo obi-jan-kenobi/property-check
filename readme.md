@@ -28,3 +28,18 @@ describe("simple math", () => {
   })
 })
 ```
+
+### Example with three generators and partial application
+
+```js
+const { property, generators: gen } = require("property-check")
+
+describe("associativity", () => {
+  const threeRandomInts = property(gen.intGen, gen.intGen, gen.intGen)
+  it("should work for addition", () => {
+    expect(threeRandomInts((x, y, z) => (x + y) + z == x + (y + z)))
+  })
+  it("should work for multiplication", () => {
+    expect(threeRandomInts((x, y, z) => (x * y) * z == x * (y * z)))
+  })
+})

@@ -9,6 +9,12 @@ const property = (...generators) => (prop, iterations = 100) => {
   gens.map(gen => gen.next(true))
 }
 
+const sample = generator => {
+  const ret = new Array(6)
+  const values = generator()
+  return ret.fill().map(_ => values.next())
+}
+
 function * intGen () {
   while (true) yield Math.round(Math.random() * Number.MAX_SAFE_INTEGER)
 }
@@ -25,4 +31,5 @@ module.exports =
   , generators:
     { intGen
     }
+  , sample
   }
