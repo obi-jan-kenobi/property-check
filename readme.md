@@ -1,6 +1,6 @@
 # property-check
 
-property-check is a library for random testing of program properties
+property-check is a library for random testing of program properties. it's inspired by haskells quickckeck.
 
 ## How to use
 
