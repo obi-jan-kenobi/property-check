@@ -1,6 +1,6 @@
 {
   "name": "property-check",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "library for random testing of program properties",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "testing"
   ],
   "repository": {
-    "github": "https://github.com/obi-jan-kenobi/property-check"
+    "type": "git",
+    "url": "https://github.com/obi-jan-kenobi/property-check"
   }
 }
