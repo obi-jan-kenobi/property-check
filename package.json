@@ -11,5 +11,8 @@
   "keywords": [
     "test",
     "testing"
-  ]
+  ],
+  "repository": {
+    "github": "https://github.com/obi-jan-kenobi/property-check"
+  }
 }
