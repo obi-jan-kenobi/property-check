@@ -4,14 +4,11 @@
   "description": "library for random testing of program properties",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "node test.js"
   },
   "author": "Jan Sziegaud <j.sziegaud@gmail.com>",
   "license": "MIT",
-  "keywords": [
-    "test",
-    "testing"
-  ],
+  "keywords": ["test", "testing"],
   "repository": {
     "type": "git",
     "url": "https://github.com/obi-jan-kenobi/property-check"
